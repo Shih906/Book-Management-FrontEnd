@@ -1,10 +1,13 @@
 ## 簡介
 此專案為自主練習項目，搭配 .NetCore WebApi 翻新舊有 Asp.Net MVC 圖書管理系統基本功能，WebApi 專案可參考[此處](https://github.com/Shih906/Book-Management-WebApi)
+---
 
 ## 安裝及啟動
 * #### 安裝Node.js npm　:　https://nodejs.org/en/
 * #### 安裝 pnpm : npm install pnpm -g
 * #### 啟動Server　:　`pnpm dev`
+
+---
 
 ## 頁面展示
 ### 登入與註冊公用元件，含表單驗證
@@ -17,6 +20,16 @@
 
 ### 登入人員基本資料設定
 ![image](https://github.com/Shih906/Book-Management-FrontEnd-Vue3/assets/88469902/41ea7747-6c5e-4295-b720-ae53b7ce7a61)
+
+## 路由配置
+| Path | Level | 組件路徑 | 功能 | 
+| -------- | -------- | -------- |-------- |
+| /login  | 1 | /view/login/LoginPage.vue    |登入、註冊 |
+| /  | 1 | /view/layout/LayoutContainer.vue    |Layout樣式 |
+| ∣– /books  | 2 | /views/books/BookManage.vue    |書籍管理 |
+| ∣– /user/profile  | 2 | /views/user/UserProfile.vue    |基本資料 |
+
+---
 
 
 ## 套件與版本環境
